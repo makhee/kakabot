@@ -53,7 +53,7 @@ Laravel + React 를 이용하여 무엇을 개발 할까.. 를 고민하고 만�
         init.bat 
         </pre>
 
-    - 홈스테드 설정
+    - 홈스테드 설정 (홈스테드 경로내 Homestead.yaml 파일)
         <pre>
         // 공유폴더 설정하기
         folders:
@@ -65,7 +65,7 @@ Laravel + React 를 이용하여 무엇을 개발 할까.. 를 고민하고 만�
             to: /home/vagrant/{project_name}/public
         </pre>
 
-    - 호스트파일 변경    
+    - hosts파일 변경    
         <pre>192.168.10.10  {domain_name}</pre>
 
     - Vagrant 구동하기 (cmd 또는 powoershell)
