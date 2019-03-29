@@ -1,6 +1,6 @@
 <?php
 
-$test = $_GET("type");
+$test = $_GET["type"];
 
 echo '<p>' . $test . '</p>';
 ?>
