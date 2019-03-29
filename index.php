@@ -1,4 +1,6 @@
 <?php
-echo '{test}';
 
+$test = $_GET("type");
+
+echo '<p>' . $test . '</p>';
 ?>
