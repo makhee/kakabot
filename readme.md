@@ -1,71 +1,90 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# 목적
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+Laravel + React 를 이용하여 무엇을 개발 할까.. 를 고민하고 만들어보자.
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# 환경 설정
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+1. 서버 정보
+    > APACHE 2
+    
+    > PHP 7.3
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+    > Laravel 5.7
 
-## Learning Laravel
+    > Mysql 5.7
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost you and your team's skills by digging into our comprehensive video library.
+2. 개발 환경
 
-## Laravel Sponsors
+    Windows
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+    - VirtualBox 설치 : https://www.virtualbox.org/wiki/Downloads
+    - Vagrant 설치 : https://www.vagrantup.com/downloads.html
+    - 홈스테드 Vagrant Box 설치 (cmd 또는 powoershell)
+       <pre> vagrant box add laravel/homestead 
+       
+       ==> box: Loading metadata for box 'laravel/homestead'
+           box: URL: https://vagrantcloud.com/laravel/homestead
+       This box can work with multiple providers! The providers that it
+       can work with are listed below. Please review the list and choose
+       the provider you will be working with.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
+       1) hyperv 
+       2) parallels 
+       3) virtualbox 
+       4) vmware_desktop  
+       
+       Enter your choice: 3
+       </pre>
+       
+    - 홈스테드 설치 (cmd 또는 powoershell) *https://github.com/laravel/homestead/releases* 에서 최신 버전 확인하여 {버전} 정보 변경.
+        <pre>  
+        // 작업 경로에 git clone 받기
+        git clone https://github.com/laravel/homestead.git {workspace_path}<br>
+        // 작업 경로로 이동
+        cd {workspace_path}<br>
+        // 최신버전의 브런치로 변경하여 소스 최신화
+        git checkout {버전}<br>
+        // 실행하여 홈스테드 설치완료
+        init.bat 
+        </pre>
 
-## Contributing
+    - 홈스테드 설정 (홈스테드 경로내 Homestead.yaml 파일)
+        <pre>
+        // 공유폴더 설정하기
+        folders:
+            - map: {workspace_path/project_name}
+            to: /home/vagrant/{project_name}<br>
+        // Nginx root 설정하기
+        sites:
+            - map: {domain_name}
+            to: /home/vagrant/{project_name}/public
+        </pre>
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+    - hosts파일 변경    
+        <pre>192.168.10.10  {domain_name}</pre>
 
-## Security Vulnerabilities
+    - Vagrant 구동하기 (cmd 또는 powoershell)
+        > vagrant up : 실행
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+        > vagrant reload --provision : 재실행 
 
-## License
+        > vagrant halt : 중지
+        
+        > vagrant destroy --force : 삭제
 
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+        > vagrant ssh : ssh연결 // 인증서 생성 필요
+
+    - 인증서 생성
+        <pre>ssh-keygen -t rsa -b 4096 -C "{이메일}"<br>이후 상황 모두 엔터</pre>
+
+    - Laravel 설치
+        <pre>
+        $ composer global require "laravel/installer"<br>
+        $ cd /home/vargrant<br>
+        $ laravel new {project_name}
+        </pre>
+
+    - Laravel 설치 확인
+        > http(s)://{domain_name}
