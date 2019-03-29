@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('botmsg', function (msg) {
+    return '<p>' . msg . '</p>';
+});
