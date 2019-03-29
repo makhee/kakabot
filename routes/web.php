@@ -16,6 +16,6 @@ Route::get('/', function () {
 });
 
 
-Route::get('botmsg', function (msg) {
-    return '<p>' . msg . '</p>';
+Route::get('botmsg/{msg}', function ($msg) {
+    return '<p>' . $msg . '</p>';
 });
