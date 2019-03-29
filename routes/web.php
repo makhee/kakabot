@@ -19,3 +19,7 @@ Route::get('/', function () {
 Route::get('botmsg/{msg}', function ($msg) {
     return '<p>' . $msg . '</p>';
 });
+
+Route::get('wellcome', function ($) {
+    return view('welcome');
+});
