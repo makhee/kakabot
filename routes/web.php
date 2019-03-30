@@ -11,15 +11,16 @@
 |
 */
 
+use App\Http\Controllers\CmdSelector as CmdSelector;
+
 Route::get('/', function () {
     return view('welcome');
 });
 
 
-Route::get('botmsg/{msg}', function ($msg) {
-    return '<p>' . $msg . '</p>';
-});
+Route::get('botmsg/{msg}', function($msg){
+    $cmd_selector = new CmdSelector;
+    $result = $cmd_selector->selector($msg);
 
-Route::get('wellcome', function () {
-    return view('welcome');
+    return '<p>' . $result . '</p>';
 });
