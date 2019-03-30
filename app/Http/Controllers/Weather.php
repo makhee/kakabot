@@ -16,7 +16,7 @@ class Weather extends Controller
     
         $crawler = $client->request('GET', $url);
         $crawler->filter('.info_data')->each(function ($node) {
-            echo $node->text()."\n";
+            echo $node->text()."<br>";
         });
         
     }
