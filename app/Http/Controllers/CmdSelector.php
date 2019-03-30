@@ -19,14 +19,19 @@ class CmdSelector extends Controller
         
         switch ($cmd) {
             case "!명령어" : {
-                return "!주사위, !혁주, !티거, !넬리, !쿠퍼, !상훈, !석주, !민석, !091 이 있습니다.";
+                return "!주사위 숫자, !혁주, !티거, !넬리, !쿠퍼, !상훈, !석주, !민석, !091 이 있습니다.";
             }
 
             case "!주사위" : {
                 $dice_game = new DiceGame; 
+                
+                if($val <= 0){
+                    $val = "";
+                }
+
                 $result = $dice_game->start($val);
                 
-                return "주사위 " . $val . " 을 굴려 " . $result . " 이 나왔습니다.";
+                return "주사위 " . $val . ($val == '' ? " 를 굴려 " : " 을 굴려") . $result . " 이 나왔습니다.";
             }
             
             case "!혁주" : {
