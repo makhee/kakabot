@@ -24,7 +24,9 @@ class CmdSelector extends Controller
 
             case "!주사위" : {
                 $dice_game = new DiceGame; 
-                return $dice_game->start($val);
+                $result = $dice_game->start($val);
+                
+                return "주사위 " . $val . " 을 굴려 " . $result . " 이 나왔습니다.";
             }
             
             case "!혁주" : {
