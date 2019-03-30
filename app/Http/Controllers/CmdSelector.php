@@ -73,10 +73,6 @@ class CmdSelector extends Controller
 
                 $weather = new Weather; 
 
-                if($val <= 0){
-                    $val = "";
-                }
-
                 $result = $weather->getWeather($val);
             }
         }
