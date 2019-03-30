@@ -31,6 +31,10 @@ class CmdSelector extends Controller
                 return "아이고 우리팀장님";
             }
 
+            case "!넬리" : {
+                return "담배 한대 삐까?";
+            }
+
             case "!쿠퍼" : {
                 return "아이고 우리 전팀장님";
             }
