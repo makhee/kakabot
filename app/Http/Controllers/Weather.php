@@ -10,7 +10,10 @@ class Weather extends Controller
 
     public function getWeather($city)
     {
-        $url = 'https://search.naver.com/search.naver?query=날씨+' . $city . '';
+        if($city == "") {
+            $city = "서울";
+        }
+        $url = 'https://search.naver.com/search.naver?query=날씨+' . $city;
 
         $client = new Client();
     
