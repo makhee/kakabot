@@ -18,9 +18,9 @@ Route::get('/', function () {
 });
 
 
-Route::get('botmsg/{msg}', function($msg){
+Route::get('botmsg/{msg}/{sender}', function($msg, $sender){
     $cmd_selector = new CmdSelector;
-    $result = $cmd_selector->selector($msg);
+    $result = $cmd_selector->selector($msg, $sender);
 
     return '<p>' . $result . '</p>';
 });

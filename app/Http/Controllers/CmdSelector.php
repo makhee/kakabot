@@ -8,9 +8,10 @@ use App\Http\Controllers\DiceGame as DiceGame;
 
 class CmdSelector extends Controller
 {
-    public function selector($msg)
+    public function selector($msg, $sender)
     {
         $decode_msg = urldecode($msg);
+        $decode_sender = urldecode($sender);
 
         $a_cmd = explode(" ", $decode_msg);
 
@@ -24,14 +25,14 @@ class CmdSelector extends Controller
 
             case "!주사위" : {
                 $dice_game = new DiceGame; 
-                
+
                 if($val <= 0){
                     $val = "";
                 }
 
                 $result = $dice_game->start($val);
                 
-                return "주사위 " . $val . ($val == '' ? " 를 굴려 " : " 을 굴려") . $result . " 이 나왔습니다.";
+                return $decode_sender . "님이 주사위 " . $val . ($val == '' ? "를 굴려 " : "을 굴려 ") . $result . "이 나왔습니다.";
             }
             
             case "!혁주" : {
