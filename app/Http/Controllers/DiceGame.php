@@ -8,6 +8,9 @@ class DiceGame extends Controller
 {
     public function start($max_num = 10)
     {
+        if($max_num == "") {
+            $max_num = 10;
+        }
         return mt_rand(0, $max_num);
     }
 }
