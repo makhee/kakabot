@@ -22,18 +22,15 @@ class CmdSelector extends Controller
         
         switch ($cmd) {
             case "!명령어" : {
-                return "!주사위 숫자, !혁주, !티거, !넬리, !쿠퍼, !상훈, !석주, !민석, !091 이 있습니다.";
+                return "!주사위 숫자, !혁주, !티거, !넬리, !쿠퍼, !상훈, !석주, !민석, !091, !날씨 지역";
             }
 
             case "!주사위" : {
-                $dice_game = new DiceGame; 
-
                 if($val <= 0){
                     $val = "";
                 }
-
+                $dice_game = new DiceGame; 
                 $result = $dice_game->start($val);
-                
                 return $decode_sender . "님이 주사위 " . $val . ($val == '' ? "를 굴려 " : "을 굴려 ") . $result . "이 나왔습니다.";
             }
             
@@ -70,9 +67,7 @@ class CmdSelector extends Controller
             }
 
             case "!날씨" : {
-
                 $weather = new Weather; 
-
                 $result = $weather->getWeather($val);
             }
         }
