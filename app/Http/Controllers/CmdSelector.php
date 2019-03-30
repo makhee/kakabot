@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Controllers\DiceGame as DiceGame;
+use App\Http\Controllers\Weather as Weather;
 
 class CmdSelector extends Controller
 {
     public function selector($msg, $sender)
     {
+
         $decode_msg = urldecode($msg);
         $decode_sender = urldecode($sender);
 
@@ -65,6 +67,17 @@ class CmdSelector extends Controller
 
             case "!091" : {
                 return "091님 박수한번 칠까요?";
+            }
+
+            case "!날씨" : {
+
+                $weather = new Weather; 
+
+                if($val <= 0){
+                    $val = "";
+                }
+
+                $result = $weather->getWeather($val);
             }
         }
 
