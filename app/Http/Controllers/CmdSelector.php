@@ -70,6 +70,22 @@ class CmdSelector extends Controller
                 $weather = new Weather; 
                 $result = $weather->getWeather($val);
             }
+
+            case "!곤듀" : {
+                return "곤지암 듀랑고라고 불리며 자기는 사투리를 쓰지않는다고 우김.";
+            }
+
+            case "!황탐" : {
+                return "아 혁켱 나대지말라구요!!";
+            }
+
+            case "!화뭉" {
+                return "레몬밤 와우와!!";
+            }
+
+            case "!혀닁" {
+                return "ㅎㅎ... 어색.. ㅎㅎ..";
+            }
         }
 
     }
