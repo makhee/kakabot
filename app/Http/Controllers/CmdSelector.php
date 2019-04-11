@@ -79,11 +79,11 @@ class CmdSelector extends Controller
                 return "아 혁켱 나대지말라구요!!";
             }
 
-            case "!화뭉" {
+            case "!화뭉" : {
                 return "레몬밤 와우와!!";
             }
 
-            case "!혀닁" {
+            case "!혀닁" : {
                 return "ㅎㅎ... 어색.. ㅎㅎ..";
             }
         }
