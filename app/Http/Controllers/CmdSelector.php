@@ -75,7 +75,7 @@ class CmdSelector extends Controller
                 return "곤지암 듀랑고라고 불리며 자기는 사투리를 쓰지않는다고 우김.";
             }
 
-            case "!황탐" : {
+            case "!탐황" : {
                 return "아 혁켱 나대지말라구요!!";
             }
 
