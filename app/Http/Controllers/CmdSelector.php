@@ -69,6 +69,7 @@ class CmdSelector extends Controller
             case "!날씨" : {
                 $weather = new Weather; 
                 $result = $weather->getWeather($val);
+                return $result;
             }
 
             case "!곤듀" : {
