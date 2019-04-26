@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/todo', function () {
+    return view('todolist');
+});
 
 Route::get('botmsg/{msg}/{sender}', function($msg, $sender){
     $cmd_selector = new CmdSelector;
