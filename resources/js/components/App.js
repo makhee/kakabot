@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import TodoInput from './TodoInput';
 import TodoList from './TodoList';
 import { Media, Jumbotron, Container, Image } from 'react-bootstrap';
-// import logo from '../../images/IMG_0002.JPG';
+import logo from '../../img/IMG_0002.JPG';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import uuid from 'uuid';
@@ -80,13 +81,13 @@ class App extends Component {
               style={{borderWidth: '.2rem .2rem 0', borderRadius: '8px 8px 0 0'}}>
               <Container>
                 <Media>
-                  {/* <Image
+                  <Image
                     src={logo}
                     width={100}
                     height={100}
                     className='mr-3'
                     alt='makhee_logo'
-                    roundedCircle /> */}
+                    roundedCircle />
                   <Media.Body>
                     <h1>TODO LIST</h1>
                     <p>
