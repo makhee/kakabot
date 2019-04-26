@@ -93,7 +93,9 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+                <div id="example"></div>
             </div>
         </div>
     </body>
+    <script src="{{ asset('js/app.js') }}"></script>
 </html>
