@@ -73,7 +73,7 @@
 									<p>React 를 이용한 샘플코드 설명이 들어갈 자리</p>
 									<ul class="actions">
 										<li>
-											<a href="{{ url('/generic') }}" class="button">PC로 확인하기</a>
+											<a href="{{ url('/') }}" class="button">작업중</a>
 											<h5 style="text-align:center; margin-top:5px;">QR코드를 이용해 모바일에서도 확인해 보세요!</h5>
 										</li>	
 									</ul>
@@ -88,7 +88,7 @@
 									<p>React 를 이용한 샘플코드 설명이 들어갈 자리</p>									
 									<ul class="actions">
 										<li>
-											<a href="{{ url('/generic') }}" class="button">PC로 확인하기</a>
+											<a href="{{ url('/') }}" class="button">작업중</a>
 											<h5 style="text-align:center; margin-top:5px;">QR코드를 이용해 모바일에서도 확인해 보세요!</h5>
 										</li>	
 									</ul>
