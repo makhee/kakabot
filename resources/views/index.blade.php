@@ -116,7 +116,7 @@
 								<section>
 									<span class="icon major fa-code"></span>
 									<h3>SQL</h3>
-									<p>약간의 조인!!!</p>
+									<p>약간의 쿼리!!!</p>
 								</section>
 								<section>
 									<span class="icon major fa-cog"></span>
@@ -134,9 +134,9 @@
 									<p>약간의 포토샵!!!</p>
 								</section>
 							</div>
-							<ul class="actions">
+							<!-- <ul class="actions">
 								<li><a href="{{ url('/generic') }}" class="button">Learn more</a></li>
-							</ul>
+							</ul> -->
 						</div>
 					</section>
 
