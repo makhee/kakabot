@@ -6,11 +6,11 @@
 -->
 <html>
 	<head>
-		<title>Hyperspace by HTML5 UP</title>
+		<title>makhee.im</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="{{ asset('js/ie/html5shiv.js') }}"></script><![endif]-->
-		<link rel="stylesheet" href="{{ asset('css/main.css') }}" />
+		<link rel="stylesheet" href="{{ asset('css/main.css?23') }}" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="{{ asset('css/ie9.css') }}" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ asset('css/ie8.css') }}" /><![endif]-->
 	</head>
@@ -19,12 +19,15 @@
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
+					<div class="cycle-logo-wrapper">
+						<img src="{{ asset('img/IMG_0002.JPG') }}" class="cycle-logo"/>
+					</div>
 					<nav>
 						<ul>
 							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Who we are</a></li>
-							<li><a href="#two">What we do</a></li>
-							<li><a href="#three">Get in touch</a></li>
+							<li><a href="#one">Sample</a></li>
+							<li><a href="#two">Tech</a></li>
+							<li><a href="#three">Talk</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -36,49 +39,58 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1>Hyperspace</h1>
-							<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
-							<ul class="actions">
+							<h1>MAKHEE</h1>
+							<p>권막히, MAKHEE 로 활동하고 있는 개발자입니다.<br/>
+							개발을 좋아하는 서른남이에요! 아래는 간략하게 저를 소개할 수 있는 내용입니다.</p>
+							<!-- <ul class="actions">
 								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
+							</ul> -->
 						</div>
 					</section>
 
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<a href="#" class="image"><img src="{{ asset('img/pic01.jpg') }}" alt="" data-position="center center" /></a>
+							<a href="#" class="image"><img src="{{ asset('img/qr_todo.png') }}" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Sed ipsum dolor</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<h2>TODO LIST</h2>
+									<p>React TODO LIST</p>
 									<ul class="actions">
-										<li><a href="{{ url('/generic') }}" class="button">Learn more</a></li>
+										<li>
+											<a href="{{ url('/todo') }}" class="button">PC로 확인하기</a>
+											<h5 style="text-align:center; margin-top:5px;">QR코드를 이용해 모바일에서도 확인해 보세요!</h5>
+										</li>
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="{{ asset('img/pic02.jpg') }}" alt="" data-position="top center" /></a>
+							<a href="#" class="image"><img src="{{ asset('img/qr_index.png') }}" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<h2>Sample Code 제목이 들어갈 자리</h2>
+									<p>React 를 이용한 샘플코드 설명이 들어갈 자리</p>
 									<ul class="actions">
-										<li><a href="{{ url('/generic') }}" class="button">Learn more</a></li>
+										<li>
+											<a href="{{ url('/generic') }}" class="button">PC로 확인하기</a>
+											<h5 style="text-align:center; margin-top:5px;">QR코드를 이용해 모바일에서도 확인해 보세요!</h5>
+										</li>	
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="{{ asset('img/pic03.jpg') }}" alt="" data-position="25% 25%" /></a>
+							<a href="#" class="image"><img src="{{ asset('img/qr_index.png') }}" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<h2>Sample Code 제목이 들어갈 자리</h2>
+									<p>React 를 이용한 샘플코드 설명이 들어갈 자리</p>									
 									<ul class="actions">
-										<li><a href="{{ url('/generic') }}" class="button">Learn more</a></li>
+										<li>
+											<a href="{{ url('/generic') }}" class="button">PC로 확인하기</a>
+											<h5 style="text-align:center; margin-top:5px;">QR코드를 이용해 모바일에서도 확인해 보세요!</h5>
+										</li>	
 									</ul>
 								</div>
 							</div>
@@ -88,38 +100,38 @@
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<h2>보유 기술</h2>
+							<!-- <p>사용 가능한 기술</p> -->
 							<div class="features">
 								<section>
 									<span class="icon major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<h3>PHP</h3>
+									<p>CI, Laravel</p>
 								</section>
 								<section>
-									<span class="icon major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<span class="icon major fa-code"></span>
+									<h3>SCRIPT</h3>
+									<p>Vanilla JS, Jquery, Vue JS, React JS</p>
+								</section>
+								<section>
+									<span class="icon major fa-code"></span>
+									<h3>SQL</h3>
+									<p>약간의 조인!!!</p>
 								</section>
 								<section>
 									<span class="icon major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<h3>인프라구축</h3>
+									<p>AWS를 이용한 운영환경, Docker, Vagrant를 이용한 개발환경 세팅</p>
 								</section>
 								<section>
-									<span class="icon major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<span class="icon major fa-css3"></span>
+									<h3>CSS</h3>
+									<p>반응형, 약간의 애니메이션!!!</p>
 								</section>
 								<section>
-									<span class="icon major fa-chain"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-diamond"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<span class="icon major fa-photo"></span>
+									<h3>DESIGN</h3>
+									<p>약간의 포토샵!!!</p>
 								</section>
 							</div>
 							<ul class="actions">
@@ -131,8 +143,8 @@
 				<!-- Three -->
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<h2>소통해요!</h2>
+							<p>소통을 원하시면 아래 내용을 작성하여 저에게 보내주세요.</p>
 							<div class="split style1">
 								<section>
 									<form method="post" action="#">
@@ -157,24 +169,22 @@
 									<ul class="contact">
 										<li>
 											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
+											<span>경기도 광주에서 지내고 있어요!</span>
 										</li>
 										<li>
 											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
+											<a href="#">fzl7808777@gmail.com</a>
 										</li>
-										<li>
+										<!-- <li>
 											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
+											<span>(010) 2852-3976</span>
+										</li> -->
 										<li>
 											<h3>Social</h3>
 											<ul class="icons">
 												<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
 												<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="https://github.com/makhee" target="blink" class="fa-github"><span class="label">GitHub</span></a></li>
 												<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
 												<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
 											</ul>
@@ -191,7 +201,7 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>MAKHEE.IM All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>

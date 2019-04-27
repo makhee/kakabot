@@ -1894,7 +1894,7 @@
 		color: #ffffff !important;
 		cursor: pointer;
 		display: inline-block;
-		font-size: 0.6em;
+		font-size: 0.9em;
 		font-weight: bold;
 		height: calc(4.75em + 2px);
 		letter-spacing: 0.25em;
@@ -3021,7 +3021,10 @@
 
 		.spotlights > section > .image {
 			background-position: center center;
-			background-size: cover;
+			/* background-size: cover; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-color: #fff;
 			border-radius: 0;
 			display: block;
 			position: relative;
@@ -3577,6 +3580,15 @@
 				height: 100%;
 			}
 
+			#sidebar > .inner > .cycle-logo-wrapper {
+				text-align: center; margin-bottom:20px;
+			}
+
+			#sidebar > .inner > .cycle-logo-wrapper > .cycle-logo {
+				width:200px; border-radius: 50%;
+			}
+
+
 		#sidebar nav > ul {
 			list-style: none;
 			padding: 0;
@@ -3834,6 +3846,18 @@
 					align-items: stretch;
 					height: inherit;
 					line-height: inherit;
+				}
+
+				#sidebar > .inner > .cycle-logo-wrapper {
+					text-align: center;
+					line-height: 1.75;
+					outline: 0;
+					padding: 0.6em 20px;
+				}
+
+				#sidebar > .inner > .cycle-logo-wrapper > .cycle-logo {
+					width:35px; 
+					border-radius: 50%;
 				}
 
 				#sidebar nav {
