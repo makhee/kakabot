@@ -147,7 +147,7 @@
 							<p>소통을 원하시면 아래 내용을 작성하여 저에게 보내주세요.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form method="post" action="#" onsubmit="return false">
 										<div class="field half first">
 											<label for="name">Name</label>
 											<input type="text" name="name" id="name" />
@@ -161,7 +161,7 @@
 											<textarea name="message" id="message" rows="5"></textarea>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
+											<li><a href="#" onClick="alert('준비중입니다.');" class="button submit">Send Message</a></li>
 										</ul>
 									</form>
 								</section>
