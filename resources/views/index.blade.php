@@ -66,7 +66,7 @@
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="{{ asset('img/qr_index.png') }}" alt="" data-position="top center" /></a>
+							<a href="#" class="image"><img src="{{ asset('img/qr_Index.png') }}" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Sample Code 제목이 들어갈 자리</h2>
@@ -81,7 +81,7 @@
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="{{ asset('img/qr_index.png') }}" alt="" data-position="25% 25%" /></a>
+							<a href="#" class="image"><img src="{{ asset('img/qr_Index.png') }}" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Sample Code 제목이 들어갈 자리</h2>
