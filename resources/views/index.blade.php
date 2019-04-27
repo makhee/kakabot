@@ -123,7 +123,7 @@
 									<h3>인프라구축</h3>
 									<p>AWS를 이용한 운영환경, Docker, Vagrant를 이용한 개발환경 세팅</p>
 								</section>
-								<section>
+								<!-- <section>
 									<span class="icon major fa-css3"></span>
 									<h3>CSS</h3>
 									<p>반응형, 약간의 애니메이션!!!</p>
@@ -132,7 +132,7 @@
 									<span class="icon major fa-photo"></span>
 									<h3>DESIGN</h3>
 									<p>약간의 포토샵!!!</p>
-								</section>
+								</section> -->
 							</div>
 							<!-- <ul class="actions">
 								<li><a href="{{ url('/generic') }}" class="button">Learn more</a></li>
