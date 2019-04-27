@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic - Hyperspace by HTML5 UP</title>
+		<title>makhee.im</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="{{ asset('js/ie/html5shiv.js') }}"></script><![endif]-->
@@ -18,7 +18,7 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
+				<a href="{{ url('/') }}" class="title">Makhee</a>
 				<nav>
 					<ul>
 						<li><a href="{{ url('/') }}">Home</a></li>
