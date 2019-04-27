@@ -14,11 +14,19 @@
 use App\Http\Controllers\CmdSelector as CmdSelector;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/todo', function () {
     return view('todolist');
+});
+
+Route::get('/generic', function () {
+    return view('generic');
+});
+
+Route::get('/elements', function () {
+    return view('elements');
 });
 
 Route::get('botmsg/{msg}/{sender}', function($msg, $sender){
