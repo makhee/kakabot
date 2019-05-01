@@ -12,6 +12,7 @@
 */
 
 use App\Http\Controllers\CmdSelector as CmdSelector;
+use App\Http\Controllers\Message as Message;
 
 Route::get('/', function () {
     return view('index');
@@ -28,6 +29,8 @@ Route::get('/generic', function () {
 Route::get('/elements', function () {
     return view('elements');
 });
+
+Route::post('/message/inesrt', 'Message@InsertMessage');
 
 Route::get('botmsg/{msg}/{sender}', function($msg, $sender){
     $cmd_selector = new CmdSelector;

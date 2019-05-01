@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Http\Controllers\DiceGame as DiceGame;
 use App\Http\Controllers\Weather as Weather;
 
