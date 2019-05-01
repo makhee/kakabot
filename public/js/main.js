@@ -219,23 +219,23 @@ function validationCheck() {
 	var message = $('#message').val();
 
 	if (name == "") {
-		alert('이름을 입력해주세요.');
+		swal("실패!", "이름을 입력해주세요.", "error");
 		return false;
 	}
 
 	if (email == "") {
-		alert('이메일 주소를 입력해주세요.');
+		swal("실패!", "이메일 주소를 입력해주세요.", "error");
 		return false;
 	} else {
 		var regEmail = /([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
 		if (!regEmail.test(email)) {
-			alert('이메일 주소가 유효하지 않습니다.');
+			swal("실패!", "이메일 주소가 유효하지 않습니다.", "error");
 			return false;
 		}
 	}
 
 	if (message == "") {
-		alert('내용을 입력해주세요.');
+		swal("실패!", "내용을 입력해주세요.", "error");
 		return false;
 	}
 

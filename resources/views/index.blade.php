@@ -192,11 +192,11 @@
 							<li>
 								<h3>Social</h3>
 								<ul class="icons">
-									<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
+									<!-- <li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li> -->
+									<!-- <li><a href="https://www.facebook.com/profile.php?id=100003789194609" target="blink" class="fa-facebook"><span class="label">Facebook</span></a></li> -->
 									<li><a href="https://github.com/makhee" target="blink" class="fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<!-- <li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li> -->
+									<!-- <li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li> -->
 								</ul>
 							</li>
 						</ul>
@@ -225,6 +225,6 @@
 	<script src="{{ asset('js/util.js') }}"></script>
 	<!--[if lte IE 8]><script src="{{ asset('ie/respond.min.js') }}"></script><![endif]-->
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<script src="{{ asset('js/main.js?ut=20190501_02') }}"></script>
+	<script src="{{ asset('js/main.js?ut=20190501_03') }}"></script>
 </body>
 </html>
