@@ -32,6 +32,8 @@ Route::get('/elements', function () {
 
 Route::post('/message/inesrt', 'Message@InsertMessage');
 
+Route::get('/message/lists', 'Message@GetMessage');
+
 Route::get('botmsg/{msg}/{sender}', function($msg, $sender){
     $cmd_selector = new CmdSelector;
     $result = $cmd_selector->selector($msg, $sender);

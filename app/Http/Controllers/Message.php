@@ -12,7 +12,6 @@ class Message extends Controller
 {
 
     /**
-     * Create a new message instance.
      *
      * @param  Request  $request
      * @return Response
@@ -52,5 +51,29 @@ class Message extends Controller
 
         $message->save();
         return redirect()->back()->withSuccess('메모를 전달하였습니다.');
+    }
+
+     /**
+     *
+     * @return Response $list
+     */
+    public function GetMessage()
+    {
+        $message = new mMessage;
+        $items = $message->all();
+
+        $list = [];
+
+        foreach ($items as $item) {
+            $tmp_arr["idx"] = $item->idx;
+            $tmp_arr["name"] = $item->name;
+            $tmp_arr["email"] = $item->email;
+            $tmp_arr["memo"] = $item->memo;
+            $tmp_arr["created_at"] = $item->created_at->toDateTimeString();
+
+            array_push($list, $tmp_arr);
+        }
+        echo '<pre>';
+        print_r($list);
     }
 }
