@@ -30,7 +30,7 @@ Route::get('/elements', function () {
     return view('elements');
 });
 
-Route::post('/message/inesrt', 'Message@InsertMessage');
+Route::post('/message/insert', 'Message@InsertMessage');
 
 Route::get('/message/lists', 'Message@GetMessage');
 
