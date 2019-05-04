@@ -40,3 +40,7 @@ Route::get('botmsg/{msg}/{sender}', function($msg, $sender){
 
     return '<p>' . $result . '</p>';
 });
+
+Route::get('test/phpinfo', function(){
+    return phpinfo();
+});
