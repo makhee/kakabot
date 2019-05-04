@@ -42,5 +42,5 @@ Route::get('botmsg/{msg}/{sender}', function($msg, $sender){
 });
 
 Route::get('test/phpinfo', function(){
-    return phpinfo();
+    return view('phpinfo');
 });
