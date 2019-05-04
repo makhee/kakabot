@@ -225,6 +225,6 @@
 	<script src="{{ asset('js/util.js') }}"></script>
 	<!--[if lte IE 8]><script src="{{ asset('ie/respond.min.js') }}"></script><![endif]-->
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<script src="{{ asset('js/main.js?ut=20190504_01') }}"></script>
+	<script src="{{ asset('js/main.js?ut=20190504_02') }}"></script>
 </body>
 </html>

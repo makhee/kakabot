@@ -3,11 +3,6 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-$(window).bind('pageshow', function (_event) {
-	if(_event.originalEvent.persisted) {
-		document.location.reload();
-	}
-})
 
 (function ($) {
 
@@ -18,6 +13,13 @@ $(window).bind('pageshow', function (_event) {
 		small: '(max-width: 736px)',
 		xsmall: '(max-width: 480px)'
 	});
+
+	$(window).bind('pageshow', function (_event) {
+		if(_event.originalEvent.persisted) {
+			document.location.reload();
+		}
+	})
+	
 
 	$(function () {
 
